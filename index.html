@@ -51,31 +51,38 @@
               <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
-                <p>
-                  My recent research focuses on the intersection of machine learning, robotics, computer vision, and human-centered systems. 
-                  In the area of <strong>AI for digital health</strong>, I develop systems that leverage audio, video, physiological sensing, and multimodal data fusion 
-                  to support safety, wellbeing, and early detection of health-related conditions.
-                </p>
+          <p>
+            My recent research focuses on the intersection of machine learning, robotics, computer vision, and human-centered systems. 
+            A key direction is <strong>human-autonomy teaming</strong>, where I study human trust in automation, situational awareness, 
+            and command-and-control frameworks to support effective collaboration between people and intelligent systems.
+          </p>
 
-                <p>
-                  I am also actively researching <strong>human-robot interaction</strong>, particularly in assistive contexts for older adults, 
-                  with an emphasis on physical collaboration and human perception. 
-                  A key direction in this space involves <strong>3D human motion generation</strong>, where we explore AI methods for synthesizing 
-                  realistic human movements across different environments—work that informs and complements our efforts in assistive robotics.
-                </p>
+          <p>
+            I am actively researching <strong>human-robot interaction</strong>, particularly in assistive contexts for older adults, 
+            with an emphasis on physical collaboration and human perception. Closely connected to this is my work on 
+            <strong>3D human motion generation</strong>, where we develop AI methods for synthesizing realistic human movements across 
+            environments—research that informs both motion understanding and interaction design for assistive robotics.
+          </p>
 
-                <p>
-                  In the domain of <strong>AI for diet and food understanding</strong>, I investigate novel approaches that combine visual and linguistic cues 
-                  with computer vision, unsupervised learning, and generative AI to model natural processes such as food degradation.
-                </p>
+          <p>
+            In the area of <strong>AI for digital health</strong>, I develop systems that leverage audio, video, physiological sensing, 
+            and multimodal data fusion to support safety, wellbeing, and early detection of health-related conditions. 
+            This includes research on <strong>diet and food understanding</strong>, combining visual and linguistic cues with computer vision, 
+            unsupervised learning, and generative AI to model processes such as food degradation and monitor home activities.
+          </p>
 
-                <p>
-                  My earlier work includes contributions to 3D human shape reconstruction, cross-cultural anthropometric analysis, 
-                  and deep learning methods for medical image analysis. Across these domains, my goal is to develop intelligent systems that enhance 
-                  real-world usability, safety, and quality of life.
-                </p>
+          <p>
+            My earlier work includes contributions to <strong>3D human modeling</strong> and cross-cultural anthropometric analysis. 
+            This focus has since shifted toward studying <strong>human motion</strong>—both in terms of motion generation and interaction with robotic systems— 
+            as a foundation for advancing assistive technologies and human-centered AI.
+          </p>
+
                 <h2>Updates</h2>
                     <ul>
+                      <li><strong>Sept 2025:</strong> Paper accepted to ARC workshop @ HUMANOIDS 2025.</li>
+                      <li><strong>Sept 2025:</strong> Paper accepted to Data workshop @ CoRL 2025.</li>
+                      <li><strong>Sept 2025:</strong> Paper accepted to SIGGRAPH Asia 2025.</li>
+                      <li><strong>July 2025:</strong> Invited to review for Croatian Science Foundation (HRZZ).</li>
                       <li><strong>April 2025:</strong> Paper accepted to IEEE Transactions on Instrumentation and Measurement.</li>
                       <li><strong>January 2025:</strong> Started new project on generative motion models.</li>
                     </ul>
@@ -105,23 +112,62 @@
         </p>
       </td>
     </tr>  -->
-    
 
     <tr>
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <img src='images/robot.png' width=100%>
+          <img src='images/teaser.png' width=100%>
         </div>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="">
-          <span class="papertitle">Learning to Assist: Studying Teleoperation Modalities for Scalable Imitation Learning in Humanoid Robots</span>
+          <span class="papertitle">StableMotion: Training Motion Cleanup Models with Unpaired Corrupted Data</span>
         </a>
         <br>
-        <em>Submitted.</em>, 2025
+        <em>Accepted to SIGGRAPH Asia.</em>, 2025
+        <br>
+        <a href="https://relight-to-reconstruct.github.io/">project page</a>
         <p></p>
         <p>
-          We present a comparative study on how different teleoperation modalities—markerless hand-tracking, VR controllers, and haptic devices—affect the quality of demonstrations and learned policies in imitation learning for humanoid robots. Focusing on assistive manipulation tasks relevant to aging populations, we show that VR and haptic inputs provide more consistent demonstrations than hand-tracking alone. Moreover, combining modalities improves policy robustness and accuracy. These findings emphasize the importance of modality selection in designing effective imitation learning pipelines for assistive robotics.
+          We introduce StableMotion, a diffusion-based approach for cleaning corrupted motion capture data without the need for paired clean datasets. By leveraging simple motion quality indicators, our method trains directly on raw, artifact-prone mocap data and can both detect and fix errors at test time. Applied to a 245-hour SoccerMocap dataset, StableMotion reduces motion pops by 68% and frozen frames by 81%, outperforming state-of-the-art methods while preserving motion content.
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <img src='images/download.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="">
+          <span class="papertitle">Design Decisions that Matter: Modality, State, and Action Horizon in Imitation Learning</span>
+        </a>
+        <br>
+        <em>Accepted to Data workshop @ CoRL.</em>, 2025
+        <p></p>
+        <p>
+          We investigate how different teleoperation interfaces shape the quality of robot learning data. In a study of 400 demonstrations on assistive tasks (wiping and lamp switching), we compare VR controllers and a haptic device, measuring operator workload with NASA-TLX and fine-tuning the Octo model under varying conditions. Our findings reveal clear modality-driven differences in data quality and downstream imitation learning performance, offering practical guidance for designing robot data collection strategies.
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <img src='images/diagram.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="">
+          <span class="papertitle">Teleoperation Modalities for Assistive Learning</span>
+        </a>
+        <br>
+        <em>Accepted to ARC workshop @ HUMANOIDS.</em>, 2025
+        <p></p>
+        <p>
+          We present a comparative study on how different teleoperation modalities—markerless hand-tracking, VR controllers, and haptic devices—affect the quality of demonstrations and learned policies in imitation learning. Focusing on assistive manipulation tasks relevant to aging populations, we show that VR and haptic inputs provide more consistent demonstrations than hand-tracking alone. Moreover, combining modalities improves policy robustness and accuracy. 
         </p>
       </td>
     </tr>
